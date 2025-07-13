@@ -1,1 +1,65 @@
 Documentation about project
+Customer Churn Prediction using Machine Learning (Python)
+🔍 Project Objective
+To build a machine learning model that can predict whether a customer will churn (leave the company) or stay, based on historical customer data from a telecom company.
+
+🧠 What is Customer Churn?
+Customer churn refers to when a customer stops using a company’s services. Predicting churn helps businesses retain customers, reduce losses, and improve service.
+
+📊 Dataset Features (Example)
+The dataset contains information like:
+gender: Male/Female
+SeniorCitizen: Whether the customer is a senior
+Partner / Dependents: Relationship status
+tenure: How long they've been a customer
+PhoneService / InternetService / Contract
+MonthlyCharges / TotalCharges
+Churn (Target): Yes/No
+
+🧰 Tools and Technologies Used
+Language: Python
+Libraries:
+pandas, numpy – Data manipulation
+scikit-learn – ML modeling
+matplotlib, seaborn – Visualization
+pickle – Model saving/loading
+
+🛠️ Steps Performed
+Data Loading: Loaded customer data using pandas.
+Preprocessing:
+Handled missing values
+Encoded categorical variables
+Scaled numeric features
+
+Exploratory Data Analysis (EDA):
+Checked churn distribution
+Correlation analysis
+
+Model Training:
+Used models like Logistic Regression, Random Forest
+Split data using train_test_split
+
+Evaluation:
+Used confusion matrix, accuracy, precision, recall
+
+Model Saving:
+Used pickle to save and reload the trained model
+
+🧪 Sample Model Accuracy
+Accuracy: ~85% (varies by dataset and preprocessing)
+
+🖥️ Optional Frontend
+A simple user interface can be created using:
+Streamlit (for live input and prediction)
+Flask (for deployment as a web service)
+
+📁 Project Structure
+customer_churn/
+├── churn_model.pkl           # Saved model
+├── churn_dataset.csv         # Input dataset
+├── churn_predict.py          # Python ML script
+├── churn_app.py              # (Optional) Streamlit 
+└── README.md                 # Project documentation
+
+✅ Conclusion
+This project demonstrates how machine learning can be used to help businesses reduce customer churn by predicting at-risk customers and enabling retention strategies.
